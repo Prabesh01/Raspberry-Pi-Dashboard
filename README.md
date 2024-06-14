@@ -18,6 +18,16 @@
 <br>
 <p align="center"><a href="https://github.com/femto-code/Raspberry-Pi-Dashboard/issues">Report a bug</a> | <a href="https://github.com/femto-code/Raspberry-Pi-Dashboard/discussions">Request a new feature</a> | <a href="https://github.com/femto-code/Raspberry-Pi-Dashboard/pulls">Help develop this project</a></p>
 
+## Quick cmds
+
+- sudo apt install  apache2
+- sudo apt-get install libapache2-mod-php php
+- systemctl restart apache2
+- sudo usermod -a -G www-data pi
+- sudo usermod -aG video www-data
+- sudo apt-get install libraspberrypi-bin
+- systemctl restart apache2
+
 ## Features
 
 - Live surveillance of RPi hardware (CPU temperature, frequency, load etc.) with customizable warning thresholds
