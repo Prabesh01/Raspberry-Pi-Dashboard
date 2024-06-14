@@ -68,7 +68,7 @@ cecho -c 'blue' "This setup will install the dashboard to /var/www/html."
 _process "Please choose your subfolder name, so you will be able to call the dashboard at http://$hostn/{your_subfolder_name}"
 read -p "Enter custom subfolder name: " subfoldern
 cd /var/www/html
-git clone https://github.com/femto-code/Raspberry-Pi-Dashboard $subfoldern
+git clone https://github.com/Prabesh01/Raspberry-Pi-Dashboard $subfoldern
 _process "Setting up valid permissions for /var/www/html/$subfoldern..."
 sudo chown -R ${whoami}:www-data /var/www/html/$subfoldern
 sudo chmod -R 775 /var/www/html/$subfoldern
