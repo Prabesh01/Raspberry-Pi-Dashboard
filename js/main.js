@@ -119,6 +119,8 @@ function authorize() {
   }
 }
 function checkShutdown(callback) {
+  document.getElementById("currentState").innerHTML='<div class="alert alert-success" role="alert"><i class="bi bi-check2-circle"></i>&nbsp;Currently there is no other power event planned.</div>';
+  return;
   document.getElementById("currentState").innerHTML='<div class="alert alert-info" role="alert"><i class="bi bi-chevron-double-right"></i>&nbsp;Checking for power events...</div>';
   var vReq = new ntwReq("backend/serv.php?checkShutdown", function (data) {
     console.log(data.responseText);
