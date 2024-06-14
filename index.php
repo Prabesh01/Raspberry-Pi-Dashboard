@@ -14,11 +14,11 @@ $config->load("local.config", "defaults.php");
 
 $auth=(isset($_SESSION["rpidbauth"])) ? true : false;
 
-if(!isset($_SESSION["setup"])){
-  if( ($config->get("general.initialsetup")=="0") || ($config->get("general.initialsetup")=="") ){
-    header("Location: setup.php");
-  }
-}
+// if(!isset($_SESSION["setup"])){
+//   if( ($config->get("general.initialsetup")=="0") || ($config->get("general.initialsetup")=="") ){
+//     header("Location: setup.php");
+//   }
+// }
 
 $path=$_SERVER['SCRIPT_FILENAME'];
 $fol=substr($path, 0, -9);
