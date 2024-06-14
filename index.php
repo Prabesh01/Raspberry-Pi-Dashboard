@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION["rpidbauth"]=time();
 error_reporting (E_ALL);
 ini_set ('display_errors', 'On');
 
