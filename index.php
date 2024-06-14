@@ -474,6 +474,7 @@ if($auth){
             </div>
             <small id="dbRefreshHelp" class="col form-text text-muted">Refresh interval of live data update section (recommended: 10 - 60 sec) - default: 15</small>
           </div>
+<!--
           <h4 class="mb-0">Authentication</h4>
           <div class="form-row mb-2">
             <div class="col">
@@ -486,6 +487,7 @@ if($auth){
               <div class="invalid-feedback">Repeated password not correct!</div>
             </div>
           </div>
+-->
           <button type="button" id="applyBtn" class="btn btn-outline-success">Apply</button>
           <button type="button" id="discardBtn" class="btn btn-outline-secondary">Discard changes</button>
           <button type="button" id="defaultsBtn" class="btn btn-outline-primary">Defaults</button>
@@ -494,6 +496,7 @@ if($auth){
 
         <hr />
         <div class="accordion" id="accordion">
+<!--          
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -521,7 +524,7 @@ if($auth){
               </div>
             </div>
           </div>
-
+-->
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
