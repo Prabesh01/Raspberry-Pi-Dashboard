@@ -45,6 +45,7 @@ function preload(){
 
 var tselect=1;
 function authorize() {
+  return;
   if(!$("#inputPassword2").is(":visible")){
     pass="alreadyauthorized";
   }else{
@@ -204,6 +205,7 @@ function outputShutdown(data,act) {
 }
 
 function shutdown(){
+  return;
   clearInterval(updinterval);
   $('#exampleModalCenter').modal('hide');
   $('#exampleModalCenter2').modal('show');
@@ -228,6 +230,7 @@ function shutdown(){
 }
 
 function logout(){
+  return;
   var vReq = new ntwReq("backend/serv.php?logout", function (data) {
     console.log(data.responseText);
     if(timer==true){
