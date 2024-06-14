@@ -40,7 +40,7 @@
 ## Use installer script (alpha)
 
 ```bash
-wget -O install.sh https://github.com/femto-code/Raspberry-Pi-Dashboard/raw/release/installer.sh
+wget -O install.sh https://github.com/Prabesh01/Raspberry-Pi-Dashboard/raw/release/installer.sh
 bash install.sh
 ```
 
@@ -70,7 +70,7 @@ _(if you are using another distro than Raspberry Pi OS the username of web serve
 
 ### Setup project
 
-- clone the project into your web folder:<br>`git clone https://github.com/femto-code/Rasberry-Pi-Dashboard.git /var/www/html/<your_subfolder_name>`<br>(replace `<your_subfolder_name>` with a name of your choice accordingly, you can also rename this base folder at any time afterwards)
+- clone the project into your web folder:<br>`git clone https://github.com/Prabesh01/Rasberry-Pi-Dashboard.git /var/www/html/<your_subfolder_name>`<br>(replace `<your_subfolder_name>` with a name of your choice accordingly, you can also rename this base folder at any time afterwards)
 - ***Alternatively*** download this repo as a ZIP file and extract it
 - Run in a terminal to set valid permissions:
   - `sudo chown -R <yourlogin>:www-data /var/www/html/<your_subfolder_name>`<br>(replace `<yourlogin>` with your username)
