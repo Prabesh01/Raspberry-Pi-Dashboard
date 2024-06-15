@@ -27,7 +27,24 @@
 - sudo usermod -aG video www-data
 - sudo apt-get install libraspberrypi-bin
 - systemctl restart apache2
+- sudo nano /etc/apache2/ports.conf:
+  Listen 881
+- sudo nano /etc/apache2/sites-available/helth.conf
+```
+<VirtualHost *:881>
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/helth
 
+        ErrorLog ${APACHE_LOG_DIR}/helth.log
+        CustomLog ${APACHE_LOG_DIR}/helth.log combined
+</VirtualHost>
+```
+ - sudo a2ensite helth
+ - systemctl reload apache2
+ - sudo mkdir /var/www/helth
+ - sudo chown -R pi:www-data /var/www/helth
+ - Enter custom subfolder name: ../helth
+   
 ## Features
 
 - Live surveillance of RPi hardware (CPU temperature, frequency, load etc.) with customizable warning thresholds
