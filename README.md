@@ -41,9 +41,9 @@
 ```
  - sudo a2ensite helth
  - systemctl reload apache2
- - sudo mkdir /var/www/helth
+ - git clone https://github.com/Prabesh01/Raspberry-Pi-Dashboard.git /var/www/helth 
  - sudo chown -R pi:www-data /var/www/helth
- - Enter custom subfolder name: ../helth
+ - sudo chmod -R 775 /var/www/helth
    
 ## Features
 
